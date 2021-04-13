@@ -1,5 +1,5 @@
 document.documentElement.style.setProperty(
-  "--constansize",
+  "--constantsize",
   Math.round(document.documentElement.offsetHeight / 50) + "px"
 );
 
