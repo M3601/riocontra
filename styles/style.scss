@@ -12,7 +12,7 @@
 }
 
 :root {
-  font-size: 2vh;
+  font-size: var(--constantsize);
 }
 
 ::selection {

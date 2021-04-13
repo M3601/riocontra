@@ -1,3 +1,8 @@
+document.documentElement.style.setProperty(
+  "--constansize",
+  document.documentElement.offsetHeight / 50 + "px"
+);
+
 let default_limit = 3;
 let limit = default_limit;
 document.querySelector("#limit").value = default_limit;
