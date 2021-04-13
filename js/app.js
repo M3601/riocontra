@@ -1,6 +1,6 @@
 document.documentElement.style.setProperty(
   "--constansize",
-  document.documentElement.offsetHeight / 50 + "px"
+  Math.round(document.documentElement.offsetHeight / 50) + "px"
 );
 
 let default_limit = 3;
