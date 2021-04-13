@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>riocontra</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./assets/sort.svg" type="image/xml+svg" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span>rio</span>
+        <span style="color: #69f0ae">contra</span>
+      </div>
+      <div class="options">
+        <div class="entry">
+          <label for="renew">Effetto sfondo:</label>
+          <input
+            type="checkbox"
+            id="renew"
+            onchange="renew = this.checked"
+            checked
+          />
+        </div>
+        <div class="entry">
+          <label for="renew">Decripta:</label>
+          <input
+            type="checkbox"
+            id="renew"
+            onchange="decrypt = this.checked; update()"
+          />
+        </div>
+        <div class="entry">
+          <label for="limit">Limite:</label>
+          <input
+            type="text"
+            id="limit"
+            onkeyup="change_limit(this); update()"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="input-box">
+        <label for="input">Input:</label>
+        <textarea id="input" onkeyup="update()"></textarea>
+      </div>
+      <div class="swap"></div>
+      <div class="input-box">
+        <label for="output">Output:</label>
+        <textarea id="output" disabled></textarea>
+      </div>
+    </main>
+    <footer>
+      Made by
+      <a href="https://github.com/M3601/riocontra">Amato Michele Pasquale</a>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="./js/background.js"></script>
+  </body>
+</html>
